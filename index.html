@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Buena Mesa</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            La Buena Mesa
+        </h1>
+        <p>
+            Comida casera, sabor real
+        </p>
+        <nav>
+            <ul>
+                <li> <a href="#menu">Menu</a></li>
+                <li> <a href="#nosotros">Nosotros</a></li>
+                <li> <a href="#reserva">Reservas</a></li>
+                <li> <a href="ubicacion.html">¿Como llegar?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu del dia</h2>
+
+            <article>
+                <h3>Milanesa con papas</h3>
+                <p>Clásica milanesa de carne servida con papas fritas y aderezo</p>
+            </article>
+            <article>
+                <h3>Ravioles al disco</h3>
+                <p>Ravioles de ricota y carne con salsa bolognesa casera y queso rallado</p>
+            </article>
+            <article>
+                <h3>Ensalada César</h3>
+                <p>Lechuga, crutones, pollo grillado y aderezo César</p>
+            </article>
+        </section>
+        <hr>
+
+        <aside id="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos un restaurante con mas de 20 años de experiencia. Nos apasiona la buena comida y la atención cálida</p>
+        </aside>
+        <hr>
+
+        <section id="reserva">
+            <h2>Reserva tu mesa</h2>
+            <form>
+                <fieldset>
+                    <legend>Datos de la reserva</legend>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required placeholder="Rodrigo"> <br>
+                    
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" required placeholder="rodri@example.com"> <br>
+
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" required> <br>
+
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora" required> <br>
+
+                    <label for="personas">Personas</label>
+                    <input type="number" id="personas" required min="1" max="20"> <br>
+
+                    <label for="comentario">Comentario adicional</label>
+                    <textarea name="comentario" id="comentario" placeholder="Preferencia de ubucacion, sin gluten, etc" rows="8" cols="60"></textarea> <br>
+
+                    <button type="submit">Reservar</button>
+
+                </fieldset>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rodrigo Ramirez - Todos los derechos resevados</p>
+    </footer>
+
+</body>
+
+</html>
